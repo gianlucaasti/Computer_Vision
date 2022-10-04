@@ -52,7 +52,10 @@ def plot_grid(img_names, img_root, rows=5, cols=5):
         
     plt.show()
 
-plot_grid(data['img_name'][:25], IMG_ROOT)
+# get unique filenames: filenames are repeated in the csv. We want 25 different pictures
+filenames = list(set(data['img_name'].values.tolist()))
+
+plot_grid(filenames[:25], IMG_ROOT)
 
 """**Plot Images with Bounding Boxes**"""
 
@@ -99,4 +102,4 @@ def plot_grid_bbox(img_names, img_root, rows=5, cols=5):
         
     plt.show()
 
-plot_grid_bbox(data['img_name'][:25], IMG_ROOT)
+plot_grid_bbox(filenames[:25], IMG_ROOT)

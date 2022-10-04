@@ -5,5 +5,5 @@ An AI for object detection. The goal of this project is to create an AI for dete
 # PREPROCESSING: Plot of the images with Anchor Boxes
 I did this step to be sure that the Anchor Boxes were right and they refered to the correct elements.
 This code is largely based on the notebook found at this link:
-
+https://www.kaggle.com/code/raivokoot/plot-images-bounding-boxes-visualization
 They are both applied to medical data, but the original one was applied to chest x-rays.

@@ -60,7 +60,7 @@ plot_grid(filenames[:25], IMG_ROOT)
 """**Plot Images with Bounding Boxes**"""
 
 def class_to_color(class_id):
-    colors = {'Platelets':(255,0,0),'WBC':(0,255,0),'RBC':(0,0,255)}
+    colors = {'Platelets':(255,0,0),'WBC':(0,255,0),'RBC':(0,0,255),'FBC':(255,255,0)}
     return colors[class_id]
 
 # draw a single bounding box onto a numpy array image

@@ -10,8 +10,7 @@ https://www.kaggle.com/code/raivokoot/plot-images-bounding-boxes-visualization
 
 They are both applied to medical data, but the original one was applied to chest x-rays.
 
-#PreProcessing Labels and Stratified Split
-
+# PreProcessing Labels and Stratified Split
 The dataset has unbalanced classes. I stratified the dataset, but I think I will need to oversample the 2 classes with only the 8% of the data.
 The FBC column has been copied both to the train folder and the test folder. I did this because is our only sample.
 In the train folder I will remove the original picture and keep only the augmented ones after the data augmentation step.

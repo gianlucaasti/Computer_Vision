@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1qt_cJH6WW_FO99q-u3wFBaimiJvPCc5J
 """
 
-!pip install sklearn
+#!pip install sklearn
 
 # Commented out IPython magic to ensure Python compatibility.
 #To visualize CSV data
@@ -120,6 +120,8 @@ shutil.copyfile(str(imgpath), str(dst_dir))
 
 dst_dir = IMG_ROOT+'test/'+str(onlyfbc['img_name'].to_string(index=False))
 shutil.copyfile(str(imgpath), str(dst_dir))
+
+"""To split the dataset, a Stratified KFold is used. We select one of the 5 folds (containing 20% of the data) and we keep the rest for the training"""
 
 df = pd.read_csv(r'D:/Pictures/dataset/new_images/cells.csv')
 df = pd.DataFrame(df)

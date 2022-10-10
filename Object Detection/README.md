@@ -44,10 +44,13 @@ I decided to use this model because:
 
 You can find:
 <ul>
-<li><strong>LOGS</strong>: in the LOGS folder. They can be opened in tensorboard</li>
-<li><strong>WEIGHTS</strong>: in the WEIGHTS folder. They can be used to further train your network</li>
+<li><strong>LOGS</strong>: in the TRAINING_LOGS folder. They can be opened in tensorboard</li>
+<li><strong>WEIGHTS</strong>: in the TRAINING_WEIGHTS folder. They can be used to further train your network</li>
 </ul>
 
+The code is largely based on this notebook: https://www.kaggle.com/code/mahipalsingh/detection-using-keras-retinanet-train
+
+The model was taken from this github repository: https://github.com/fizyr/keras-retinanet
 
 **NEXT STEPS**:
 <ul>

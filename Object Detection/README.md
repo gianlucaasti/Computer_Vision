@@ -1,4 +1,6 @@
 # INTRODUCTION
+**WORK IN PROGRESS: THE PROJECT IS NOT COMPLETED YET**
+
 An AI for object detection. The goal of this project is to create an AI for detection and selection of White Blood Cells, Red Blood Cells, Platelets.
 
 
@@ -17,3 +19,44 @@ In the train folder I will remove the original picture and keep only the augment
 In this code I check the classes and the relative frequencies of the target labels in the dataset.
 I have also slightly modified this code to create a stratified sample of the dataset
 https://www.kaggle.com/code/backtracking/smart-data-split-train-eval-for-object-detection/notebook
+
+# PREPROCESSING: Gaussian and S&P noise
+I have decided to do data augmentation on the train dataset.
+The pictures of "Platelets" and "WBC" were augmented creating copies with both Gaussian and S&P noise.
+The relevant columns of the csv file for the original images, were copied and associated to the new ones.
+Next Steps:
+<ul>
+<li>Augment more data (FNB)</li>
+<li>Automate the csv copy-paste step</li>
+</ul>
+
+
+# MODEL_TRAINING: Retinanet
+After reading online a few papers and use cases on blood cells detection (eg: https://pubmed.ncbi.nlm.nih.gov/34828220/)
+I have decided to implent a CPU version of Retinanet.
+I decided to use this model because:
+<ul>
+<li>I could easily train it with CPU</li>
+<li>It was used in different medical studies</li>
+<li>Different papers show that it works pretty well with small images</li>
+<li>It is a bit slow, but real-time detection wasn't requested</li>
+</ul>
+
+You can find:
+<ul>
+<li>**LOGS**: in the *LOGS* folder. They can be used with tensorboard</li>
+<li>**WEIGHTS** in the *WEIGHTS* folder. They can be used to further train your network</li>
+</ul>
+
+NEXT STEPS:
+<ul>
+<li>**LOGS**: in the *LOGS* folder. They can be used with tensorboard</li>
+<li>**WEIGHTS** in the *WEIGHTS* folder. They can be used to further train your network</li>
+</ul>
+
+**NEXT STEPS**:
+<ul>
+<li>Retrain the whole network using mAP</li>
+<li>Create a full pipeline to evaluate the model on the validation set. Statistics to check: Recall, Precision, F1</li>
+<li>As I mentioned (and I cannot stress this enough) I need to check that the model performs well on the unbalanced classes</li>
+</ul>

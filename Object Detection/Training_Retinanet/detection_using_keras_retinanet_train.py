@@ -17,6 +17,9 @@ Original file is located at
 # <p style="background-color:#000000;font-family:newtimeroman;color:#fff;font-size:120%;text-align:center;border-radius:20px 80px;">Import Libraries</p>
 """
 
+# Commented out IPython magic to ensure Python compatibility.
+# %cd "D:/Documents/GitHub/Computer_Vision/Object Detection/Training_Retinanet"
+
 #!pip install progressbar2
 
 #!pip install contextlib2

@@ -44,15 +44,10 @@ I decided to use this model because:
 
 You can find:
 <ul>
-<li>**LOGS**: in the *LOGS* folder. They can be used with tensorboard</li>
-<li>**WEIGHTS** in the *WEIGHTS* folder. They can be used to further train your network</li>
+<li><strong>LOGS</strong>: in the LOGS folder. They can be opened in tensorboard</li>
+<li><strong>WEIGHTS</strong>: in the WEIGHTS folder. They can be used to further train your network</li>
 </ul>
 
-NEXT STEPS:
-<ul>
-<li>**LOGS**: in the *LOGS* folder. They can be used with tensorboard</li>
-<li>**WEIGHTS** in the *WEIGHTS* folder. They can be used to further train your network</li>
-</ul>
 
 **NEXT STEPS**:
 <ul>

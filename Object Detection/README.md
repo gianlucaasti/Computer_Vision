@@ -3,7 +3,7 @@
 
 An AI for object detection. The goal of this project is to create an AI for detection and selection of White Blood Cells, Red Blood Cells, Platelets.
 
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![alt text](https://github.com/gianlucaasti/Computer_Vision/blob/main/Object%20Detection/Images/Bloodcells_detection.PNG)
 
 
 # PREPROCESSING: Plot of the images with Anchor Boxes

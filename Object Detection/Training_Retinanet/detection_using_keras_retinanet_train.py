@@ -206,7 +206,7 @@ TENSORBOARD_DIR='D:/Pictures/dataset/new_images/logs'
 !C:/Users/Gianlu/keras-retinanet/keras_retinanet/bin/train.py --freeze-backbone --random-transform --weights {PRETRAINED_MODEL} --batch-size 1 --steps 200 --epochs 10  --tensorboard-dir {TENSORBOARD_DIR} --weighted-average csv D:/Pictures/dataset/new_images/annotation.csv D:/Pictures/dataset/new_images/classes.csv
 
 #SCRIPT TO EVALUATE MODEL
-#!C:/Users/Gianlu/keras-retinanet/keras_retinanet/bin/evaluate.py --backbone=resnet50  csv D:/Pictures/dataset/new_images/annotation.csv D:/Pictures/dataset/new_images/classes.csv {PRETRAINED_MODEL}
+!C:/Users/Gianlu/keras-retinanet/keras_retinanet/bin/evaluate.py --convert-model csv D:/Pictures/dataset/new_images/annotation.csv D:/Pictures/dataset/new_images/classes.csv {PRETRAINED_MODEL}
 
 """<a id="1"></a>
 # <p style="background-color:#000000;font-family:newtimeroman;color:#fff;font-size:120%;text-align:center;border-radius:20px 80px;">Load Trained Model</p>

@@ -3,6 +3,8 @@
 
 An AI for object detection. The goal of this project is to create an AI for detection and selection of White Blood Cells, Red Blood Cells, Platelets.
 
+![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+
 
 # PREPROCESSING: Plot of the images with Anchor Boxes
 I did this step to be sure that the Anchor Boxes were right and they refered to the correct elements.
@@ -24,7 +26,8 @@ https://www.kaggle.com/code/backtracking/smart-data-split-train-eval-for-object-
 I have decided to do data augmentation on the train dataset.
 The pictures of "Platelets" and "WBC" were augmented creating copies with both Gaussian and S&P noise.
 The relevant columns of the csv file for the original images, were copied and associated to the new ones.
-Next Steps:
+
+**NEXT STEPS**:
 <ul>
 <li>Augment more data (FNB)</li>
 <li>Automate the csv copy-paste step</li>
@@ -57,4 +60,17 @@ The model was taken from this github repository: https://github.com/fizyr/keras-
 <li>Retrain the whole network using mAP</li>
 <li>Create a full pipeline to evaluate the model on the validation set. Statistics to check: Recall, Precision, F1</li>
 <li>As I mentioned (and I cannot stress this enough) I need to check that the model performs well on the unbalanced classes</li>
+</ul>
+
+
+
+
+# Demo Evaluation
+The Demo Evaluation folder contains a chunk of the training script to load the model, check the metrics and use it to forecast bounding boxes and classes over a sample of validation data
+
+**NEXT STEPS**:
+<ul>
+<li>The mAP values are ok but I would like to do oversampling on certain classes</li>
+<li>I am considering doing undersampling of RBC</li>
+<li>Get and plot a proper confusion matrix for more informations</li>
 </ul>
